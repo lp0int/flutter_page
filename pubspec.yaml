@@ -1,7 +1,6 @@
 name: flutter_page
 description: A page base class for flutter(contain onResume() ,onHide()).
 version: 0.0.1
-author: lpoint
 homepage: https://github.com/lp0int/flutter_page
 
 environment:

@@ -4,7 +4,7 @@ import 'flutter_page.dart';
 
 class PageModel {
   final BuildContext context;
-  final FlutterPage page;
+  final FlutterPageState page;
 
   PageModel(this.context, this.page);
 }
@@ -18,7 +18,7 @@ class PageUtil {
     return page;
   }
 
-  static void pushPage(BuildContext context, FlutterPage page) {
+  static void pushPage(BuildContext context, FlutterPageState page) {
     PageModel topPage = pageList.top;
     if (topPage != null) {
       topPage.page.onHide();

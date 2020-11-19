@@ -5,7 +5,10 @@ import 'package:flutter/material.dart';
 import 'page_util.dart';
 
 /// class FlutterPage.
-abstract class FlutterPage extends StatefulWidget implements PageAttribute {}
+abstract class FlutterPage extends StatefulWidget implements PageAttribute {
+  @override
+  FlutterPageState<FlutterPage> createState();
+}
 
 abstract class FlutterPageState<T extends FlutterPage> extends State<T> {
   void onHide() {}
